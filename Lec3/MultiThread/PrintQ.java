@@ -1,13 +1,31 @@
-package Lec3.MultiThread;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package basicthreads;
 
-public class PrintQ extends Thread implements Runnable {
-	public void run(){
-		for(int i=0; i < 30; ++i){
-			System.out.println("Q");
-		}try{
-			Thread.sleep(50);
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-	}
+/**
+ *
+ * @author Andrew
+ */
+public class PrintQ implements Runnable {
+    
+    public void run(){
+        
+        for(int i = 0; i < 30; ++i){
+            System.out.print("Q");
+            //waste some time
+            int n = 0;
+            for(int j = 0; j < 1000000; ++j){
+                ++n;
+                --n;
+            }
+            /*try{
+              Thread.sleep(50);
+            } catch (InterruptedException e){
+              e.printStackTrace();
+            }*/
+        }          
+  }
+
 }
