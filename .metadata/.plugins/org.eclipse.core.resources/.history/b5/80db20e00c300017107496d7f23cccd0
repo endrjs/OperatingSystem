@@ -1,0 +1,17 @@
+package Lec3;
+
+public class Buffer {
+	
+	int[] buffer;
+	int spaceUsed;
+	
+	public Buffer(int bufferIn, int spacedUsedIn ){
+		buffer = new int[bufferIn];
+		spaceUsed = spacedUsedIn;
+	}
+	
+	public vo
+	
+	
+
+}
